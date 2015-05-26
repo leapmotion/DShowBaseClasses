@@ -8,7 +8,7 @@
 
 #pragma warning (disable:4201)
 
-#include <streams.h>
+#include "stdafx.h"
 #include <windows.h>
 #include <tchar.h>
 #include <winperf.h>

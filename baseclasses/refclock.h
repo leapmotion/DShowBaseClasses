@@ -12,6 +12,8 @@
 
 #include <Schedule.h>
 
+class CAMSchedule;
+
 const UINT RESOLUTION = 1;                      /* High resolution timer */
 const INT ADVISE_CACHE = 4;                     /* Default cache size */
 const LONGLONG MAX_TIME = 0x7FFFFFFFFFFFFFFF;   /* Maximum LONGLONG value */
@@ -161,10 +163,9 @@ private:
 
 // Thread stuff
 public:
-    void TriggerThread()    // Wakes thread up.  Need to do this if
-    {                       // time to next advise needs reevaluating.
-        EXECUTE_ASSERT(SetEvent(m_pSchedule->GetEvent()));
-    }
+    // Wakes thread up.  Need to do this if
+    // time to next advise needs reevaluating.
+    void TriggerThread();
 
 
 private:

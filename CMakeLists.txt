@@ -2,6 +2,9 @@ cmake_minimum_required(VERSION 3.0)
 include(version.cmake)
 project(baseclasses VERSION ${baseclasses_VERSION})
 
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake-modules")
+include(AddPCH)
+
 if(CMAKE_SIZEOF_VOID_P STREQUAL 4)
   set(baseclasses_BUILD_ARCHITECTURES "x86")
   set(baseclasses_BUILD_64 OFF)

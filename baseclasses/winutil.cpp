@@ -7,7 +7,7 @@
 //------------------------------------------------------------------------------
 
 
-#include <streams.h>
+#include "stdafx.h"
 #include <limits.h>
 #include <dvdmedia.h>
 #include <strsafe.h>

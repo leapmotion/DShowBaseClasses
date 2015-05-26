@@ -7,7 +7,7 @@
 //------------------------------------------------------------------------------
 
 
-#include <streams.h>
+#include "stdafx.h"
 #include <strmctl.h>
 
 CBaseStreamControl::CBaseStreamControl(__inout HRESULT *phr)

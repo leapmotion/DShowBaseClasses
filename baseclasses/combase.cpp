@@ -8,7 +8,7 @@
 //------------------------------------------------------------------------------
 
 
-#include <streams.h>
+#include "stdafx.h"
 #pragma warning( disable : 4514 )   // Disable warnings re unused inline functions
 
 

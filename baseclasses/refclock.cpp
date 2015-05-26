@@ -7,7 +7,7 @@
 //------------------------------------------------------------------------------
 
 
-#include <streams.h>
+#include "stdafx.h"
 #include <limits.h>
 
 #ifdef DXMPERF
@@ -130,6 +130,11 @@ CBaseReferenceClock::CBaseReferenceClock( __in_opt LPCTSTR pName,
             }
         }
     }
+}
+
+void CBaseReferenceClock::TriggerThread()
+{
+  EXECUTE_ASSERT(SetEvent(m_pSchedule->GetEvent()));
 }
 
 void CBaseReferenceClock::Restart (IN REFERENCE_TIME rtMinTime)

@@ -70,7 +70,9 @@ set(
   wxutil.cpp
 )
 
+add_pch(BaseClasses_SRCS "stdafx.h" "stdafx.cpp")
 add_library(BaseClasses ${BaseClasses_SRCS})
+target_include_directories(BaseClasses PRIVATE .)
 target_include_directories(
   BaseClasses
   INTERFACE

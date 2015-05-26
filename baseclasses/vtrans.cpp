@@ -7,7 +7,7 @@
 //------------------------------------------------------------------------------
 
 
-#include <streams.h>
+#include "stdafx.h"
 #include <measure.h>
 // #include <vtransfr.h>         // now in precomp file streams.h
 

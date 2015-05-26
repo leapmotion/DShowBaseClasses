@@ -7,7 +7,7 @@
 //------------------------------------------------------------------------------
 
 
-#include <streams.h>
+#include "stdafx.h"
 #include <intsafe.h>
 #include <checkbmi.h>
 
@@ -1237,7 +1237,7 @@ STDMETHODIMP CBaseControlVideo::GetVideoPaletteEntries(long StartIndex,
     // Correct the number we can retrieve
 
     LONG Available = (LONG) pHeader->biClrUsed - StartIndex;
-    *pRetrieved = max(0,min(Available,Entries));
+    *pRetrieved = max<LONG>(0,min<LONG>(Available,Entries));
     if (*pRetrieved == 0) {
         return S_FALSE;
     }

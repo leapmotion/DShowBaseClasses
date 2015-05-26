@@ -7,8 +7,7 @@
 // Copyright (c) 1995-2001 Microsoft Corporation.  All rights reserved.
 //------------------------------------------------------------------------------
 
-
-#include <streams.h>
+#include "stdafx.h"
 #include <ddraw.h>
 #include "ddmm.h"
 
