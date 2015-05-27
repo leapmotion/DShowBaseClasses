@@ -71,6 +71,16 @@ set(
 )
 
 add_library(BaseClasses ${BaseClasses_SRCS})
-target_include_directories(BaseClasses INTERFACE .)
+target_include_directories(
+  BaseClasses
+  INTERFACE
+  "$<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}>"
+  "$<INSTALL_INTERFACE:include>"
+)
 target_link_libraries(BaseClasses Winmm)
 set_property(TARGET BaseClasses PROPERTY FOLDER "Pipeline")
+install(TARGETS BaseClasses EXPORT BaseClassesTargets
+  DESTINATION lib
+  COMPONENT baseclasses
+  CONFIGURATIONS ${CMAKE_CONFIGURATION_TYPES}
+)
