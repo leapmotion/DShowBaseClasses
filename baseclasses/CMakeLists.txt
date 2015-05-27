@@ -80,6 +80,7 @@ target_include_directories(
 )
 target_link_libraries(BaseClasses Winmm)
 set_property(TARGET BaseClasses PROPERTY FOLDER "Pipeline")
+set_property(TARGET BaseClasses PROPERTY ARCHIVE_OUTPUT_NAME_DEBUG "BaseClassesd")
 install(TARGETS BaseClasses EXPORT BaseClassesTargets
   DESTINATION lib
   COMPONENT baseclasses

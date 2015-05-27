@@ -13,6 +13,8 @@ else()
   set(baseclasses_BUILD_64 ON)
 endif()
 
+set(CMAKE_CONFIGURATION_TYPES "Release;Debug" CACHE STRING "" FORCE)
+
 # CMake finder files
 configure_file(baseclasses-config.cmake.in baseclasses-config.cmake @ONLY)
 configure_file(baseclasses-configVersion.cmake.in baseclasses-configVersion.cmake @ONLY)
