@@ -252,8 +252,6 @@
 // with no change in the chain.
 
 #include "stdafx.h"
-#include <measure.h>
-#include <transip.h>
 
 
 // =================================================================

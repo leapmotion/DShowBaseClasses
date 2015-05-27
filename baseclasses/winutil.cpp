@@ -8,10 +8,10 @@
 
 
 #include "stdafx.h"
+#include "checkbmi.h"
 #include <limits.h>
 #include <dvdmedia.h>
 #include <strsafe.h>
-#include <checkbmi.h>
 
 static UINT MsgDestroy;
 

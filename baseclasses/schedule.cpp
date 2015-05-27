@@ -8,6 +8,7 @@
 
 
 #include "stdafx.h"
+#include "schedule.h"
 
 // DbgLog values (all on LOG_TIMING):
 //

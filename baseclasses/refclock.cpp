@@ -9,6 +9,7 @@
 
 #include "stdafx.h"
 #include <limits.h>
+#include "schedule.h"
 
 #ifdef DXMPERF
 #include "dxmperf.h"
